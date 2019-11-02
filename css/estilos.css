@@ -304,9 +304,10 @@ ESTILOS RETRATOS
         #contenido {
             width: 100%;
         }
-        header {
+        header{
             text-align: center;
         }
+
         header h1 {
             width: 100%;
             margin: 0 auto;
@@ -318,8 +319,12 @@ ESTILOS RETRATOS
             margin: 0 auto;
         }
         #barranav ul li{
-            font-size: 20px;
+            font-size: 20px;   
         }
+        #barranav{
+            text-align: center;
+        }
+        
         #centro{
             padding-bottom: 30px;
         }
@@ -342,7 +347,6 @@ ESTILOS RETRATOS
         #paisajes-retratos #galeria figure{
             width: 75%;
         }
-        
         
         footer div {
             width: 25%;
