@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../fonts/DancingScript-Regular.otf);
+}
+body{
+    font-family: 'DancingScript';
+    background-color:#02010a;
+    
+    
+}
+img{
+    -webkit-filter: drop-shadow(2px 2px 2px #02010a);
+    filter: drop-shadow(2px 2px 2px #02010a);
+    -ms-filter: drop-shadow(2px 2px 2px #02010a);
+    filter: drop-shadow(2px 2px 2px #02010a);
+}
+figure{
+    -webkit-filter: drop-shadow(2px 2px 2px #02010a);
+    filter: drop-shadow(2px 2px 2px #02010a);
+    -ms-filter: drop-shadow(2px 2px 2px #02010a);
+    filter: drop-shadow(2px 2px 2px #02010a); 
+}
+
+#contenido {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+#contenido #cabecera, #contenido section, #contenido .piepagina {
+    width: 100%;
+ }
+figcaption h2{
+    color: black;
+}
+#imagen-secundaria a{
+    text-decoration: underline black;
+}
+
+
+/*************************
+ESTILOS DE MI CABECERA WEB
+*************************/
+#cabecera{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    animation: slidein 2s;
+    
+
+}
+#cabecera h1{
+    text-align: left;
+    width: auto;
+    padding-top: 40px;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    font-size: 50px;
+    padding-left: 20px;
+    
+}
+#barranav{
+    text-align: right;
+    width: auto;
+}
+#barranav ul a{
+    color: white;
+    padding-bottom: 40px;
+    padding-right: 20px;      
+}
+#barranav ul li{
+    list-style-type: none;
+    display: inline;
+    font-size: 30px;
+    
+}
+header nav .enlace a, header nav .enlace a:visited {
+    text-decoration: none;
+}  
+
+
+/***************************
+ESTILOS DE LA IMAGEN CENTRAL
+***************************/
+section #centro{ 
+    text-align: center;
+    padding: 40px;
+    background-color:#82c3a6;     
+}
+#centro img{
+    margin: 0 auto;
+}
+
+/********************************
+ESTILOS PARA IMAGENES SECUNDARIAS
+********************************/
+#paisajes-retratos{
+    background-color: #d5c75f;
+    width: 100%;
+    
+}
+#imagen-secundaria figure{
+    width: 50%;
+    
+}
+
+#paisajes-retratos #imagen-secundaria img{
+    width: 100%;
+}
+
+#imagen-secundaria{
+    display: flex;
+    flex-direction: row;
+}
+figcaption{
+    text-align: center;
+}
+
+
+.imagen-izquierda img:hover{
+    -ms-transform: rotate(10deg); /* IE 9 */
+    box-shadow: 2px 2px 2px #82c3a6;
+				   
+				                             
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    box-shadow: 2px 2px 2px #82c3a6;
+	                   
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+	           
+
+}
+.imagen-izquierda img{
+    border: 2px solid black;
+    -webkit-filter: drop-shadow(4px 4px 4px #02010a);
+    filter: drop-shadow(4px 4px 4px #02010a);
+}
+.imagen-derecha img{
+    border: 2px solid black;
+    -webkit-filter: drop-shadow(4px 4px 4px #02010a);
+    filter: drop-shadow(4px 4px 4px #02010a);
+}
+.imagen-derecha img:hover{
+    -ms-transform: translateY(5px) /* IE 9*/ 
+                   translateX(20px);
+                   box-shadow: 2px 2px 2px #82c3a6;
+				                             
+	-webkit-transform: translateY(5px) /* Chrome, Safari, Opera*/
+                       translateX(20px);
+                       box-shadow: 2px 2px 2px #82c3a6;
+	transform: translateY(-5px)
+               translateX(20px);
+               box-shadow: 2px 2px 2px #82c3a6;
+	
+}
+.imagen-izquierda img{
+    transition-property: transform, box-shadow;
+    transition-duration: 1s, 1s;
+}
+.imagen-derecha img{
+    transition-property: transform, box-shadow;
+    transition-duration: 1s, 1s;
+}
+/************
+PIE DE PAGINA
+************/
+.piepagina{
+    display: flex;
+    flex-direction: row;
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 20px;
+}
+.piepagina #bloque{
+    text-align: center;
+    color: black; 
+    margin: 20px;
+	padding: 10px;
+    
+}
+.piepagina #bloque a{
+    text-decoration: none;
+
+}
+.piepagina #bloque img{
+    height: 40px;
+    width: 40px;
+}
+
+/****************
+ESTILOS RETRATOS
+****************/
+#paisajes-rtetratos{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+#galeria #primera-fila{
+    display: flex;
+    flex-direction: row;
+    
+}
+#galeria #segunda-fila{
+    display: flex;
+    flex-direction: row;   
+}
+#galeria #primera-fila figure{
+    width: 30%;  
+    
+}
+#galeria #segunda-fila figure{
+    width: 30%;  
+}
+#segunda-fila figure img{
+    width: 100%;
+    margin: auto;
+
+}
+#primera-fila figure img{
+    width: 100%;
+    margin: auto;
+}
+
+#galeria #primera-fila figure:first-child img {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#galeria #primera-fila figure:nth-child(even) img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#galeria #primera-fila figure:nth-child(3) img {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+#galeria #segunda-fila figure:first-child img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+#galeria #segunda-fila figure:nth-child(3) img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+
+
+@media all and (max-width: 900px) {
+    .piepagina{
+        display: flex !important;
+        flex-direction: column;
+        width: 100% !important; 
+        max-width: 100% !important;
+        margin: auto !important;
+        position: static !important;
+        float: none !important;
+    }
+}
+@-webkit-keyframes slidein {
+    0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    #contenido {
+        width: 900px;
+    }
+    header h1 {
+        width: 70%;
+    }
+    header nav {
+        width: 30%;
+    }
+    
+    #paisajes-retratos div{
+        width: 100%;
+    }
+    #paisajes-retratos #galeria{
+        width: 100%;
+    }
+   
+    footer div {
+        width: 25%;
+    }
+     #contenidos div{
+        width: 50%;
+    }
+}
+
+    @media (max-width: 900px) {
+        #contenido {
+            width: 100%;
+        }
+        header {
+            text-align: center;
+        }
+        header h1 {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 30px;
+        
+        }
+        header nav {
+            width: 100%;
+            margin: 0 auto;
+        }
+        #barranav ul li{
+            font-size: 20px;
+        }
+        #centro{
+            padding-bottom: 30px;
+        }
+        #paisajes-retratos{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        #paisajes-retratos div{
+            display: block !important;
+            text-align: center;
+        }
+        #imagen-secundaria figure{
+            width: 75%;
+        }
+        #paisajes-retratos #galeria{
+            display: block !important;
+            text-align: center;
+        }
+        #paisajes-retratos #galeria figure{
+            width: 75%;
+        }
+        
+        
+        footer div {
+            width: 25%;
+        }
+        #contenidos div{
+            width: 100%;
+        }
+    }
+
